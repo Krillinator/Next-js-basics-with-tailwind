@@ -1,4 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Next Routing
+
+App Folder: Everything within gets its own endpoint.
+
+- A new folder called "about" will create an endpoint for localhost:3000/about
+- To ignore / private a folder like 'components', we use an underscore \_components
+- If you want to have routing, but ignore just one folder, use parentheses (test)
+- Dynamic Parameters for endpoints, are added as [slug] followed by a page.tsx
+
+## page.tsx
+
+All pages are considered an index file, for its related parent folder.
+If the parent folder is 'about', and there's a page.tsx within 'about'.
+Then the page.tsx will be displayed in localhost:3000/about
+
+Convention
+
+- Every Routing Folder, contains a page.tsx
+- page.tsx is the default name (avoid index)
+- Every page.tsx, can (optionally) be accompanied by a layout.tsx
+
+## layout.tsx
+
+Layout.tsx adds metaData and Styling over subComponents called Children.
+A child in this case, would be all subsequent page.tsx.
+
+How it would work if app has a layout.tsx
+
+- app/about page.tsx would automatically receive the components
+- subsequent layouts within e.g: about.tsx, would ADD an additional layer rather than overwrite the previous layout.tsx
 
 ## Getting Started
 
