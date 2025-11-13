@@ -14,8 +14,8 @@ export default function Home() {
     <div>
       <div className="h-screen flex flex-col justify-center items-center text-sky-500">
         <Link href="/about">About</Link>
-        <Link href="/about">TBD</Link>
-        <Link href="/about">TBD</Link>
+        <Link href="/product">Product Page</Link>
+        <Link href="/login">Login</Link>
       </div>
 
       <div className=" h-screen flex flex-col justify-center gap-4 bg-amber-950">

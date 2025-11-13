@@ -1,4 +1,4 @@
-import { Button } from "../_components/button.component"
+import { Button } from "../../../_components/button.component"
 
 export default function Page() {
   /** About Page - Tailwind
