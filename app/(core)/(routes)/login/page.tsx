@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "@/app/_components/button.component"
 import { useState } from "react"
 
 export default function Page() {
@@ -13,9 +14,10 @@ export default function Page() {
     setSuccess(false)
 
     try {
+      // TODO - Change to apiFetch() utility
       const res = await fetch("http://localhost:8080/login", {
         method: "POST",
-        credentials: "include",
+        credentials: "include", // Include Cookies
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
       })
